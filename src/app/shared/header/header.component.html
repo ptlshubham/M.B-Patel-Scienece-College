@@ -183,7 +183,7 @@
                         <a class="btn btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown"
                             aria-expanded="false" routerLink="/home" routerLinkActive="active">Home</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="http://www.cesociety.in/#/home/main" target="_blank">CES
+                            <li><a class="dropdown-item" href="http://www.cesociety.in" target="_blank">CES
                                     Home</a> </li>
                         </ul>
                     </li>
@@ -205,18 +205,21 @@
                         <a class="btn btn-lg " routerLink="/basic/infrastructure"
                             routerLinkActive="active">Infrastructure</a>
                     </li>
-                    <li class="menu-item-has-children">
-                        <a>Department</a>
-                        <ul class="sub-menu">
-                            <li><a routerLink="/department/staff" routerLinkActive="active">Staff Details</a> </li>
-                            <li><a routerLink="/department/student" routerLinkActive="active">Student Details</a> </li>
+                    <li class="btn-group">
+                        <a  class="btn btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">Department</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" routerLink="/department/staff" routerLinkActive="active">Staff
+                                    Details</a> </li>
+                            <li><a class="dropdown-item" routerLink="/department/student"
+                                    routerLinkActive="active">Student Details</a> </li>
                         </ul>
                     </li>
                     <li class="btn-group">
                         <a class="btn btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown"
                             aria-expanded="false">Course</a>
                         <ul class="dropdown-menu">
-                            <li><a (click)="openLinks('syllabus')">Syllabus</a> </li>
+                            <li><a class="dropdown-item" (click)="openLinks('syllabus')">Syllabus</a> </li>
                         </ul>
                     </li>
                     <li class="btn-group">
@@ -225,11 +228,31 @@
                     </li>
                     <li class="btn-group">
                         <a class="btn btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Student Corner</a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item">
+                                <a routerLink="/more/academic-calendar"
+                                    routerLinkActive="active">Academic Calendar</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a (click)="openLinks('syllabus')">Syllabus</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a routerLink="/more/paper" routerLinkActive="active">Old
+                                    Question Papers</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a routerLink="/more/scholarship"
+                                    routerLinkActive="active">Scholarships for Students</a>
+                            </li>
+                           
+                        </ul>
+                    </li>
+                    <li class="btn-group">
+                        <a class="btn btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown"
                             aria-expanded="false">More</a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" routerLink="/more/result" routerLinkActive="active">Results</a>
-                            </li>
-                            <li><a class="dropdown-item" routerLink="" routerLinkActive="active">Student Corner</a>
                             </li>
                             <li><a class="dropdown-item" (click)="openLinks('forms')">Form</a> </li>
                             <li><a class="dropdown-item" (click)="openLinks('report')">Reports</a>
@@ -256,7 +279,7 @@
                                         <li class="menu-item-has-children">
                                             <a routerLink="/home" routerLinkActive="active">Home</a>
                                             <ul class="sub-menu">
-                                                <li><a href="http://www.cesociety.in/#/home/main" target="_blank">CES
+                                                <li><a href="http://www.cesociety.in" target="_blank">CES
                                                         Home</a>
                                                 </li>
                                             </ul>
@@ -356,7 +379,7 @@
                                             <li class="menu-item-has-children">
                                                 <a routerLink="/home" routerLinkActive="active">Home</a>
                                                 <ul class="sub-menu">
-                                                    <li><a href="http://www.cesociety.in/#/home/main"
+                                                    <li><a href="http://www.cesociety.in"
                                                             target="_blank">CES Home</a>
                                                     </li>
                                                 </ul>
