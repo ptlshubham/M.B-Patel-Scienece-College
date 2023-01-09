@@ -9,24 +9,32 @@ import { CampusComponent } from './campus/campus.component';
 import { SearchComponent } from './search/search.component';
 import { PaperComponent } from './paper/paper.component';
 import { SyllabusComponent } from './syllabus/syllabus.component';
-import { FormComponent } from './form/form.component';
+import { NewsComponent } from './news/news.component';
+import { NgxPaginationModule } from 'ngx-pagination';
+import { MagazineComponent } from './magazine/magazine.component';
+import { AcademicCalendarComponent } from './academic-calendar/academic-calendar.component';
+import { ScholarshipComponent } from './scholarship/scholarship.component';
 
 
 
 @NgModule({
   declarations: [
-    FormComponent,
     ResultComponent,
     CampusComponent,
     SearchComponent,
     PaperComponent,
-    SyllabusComponent
+    SyllabusComponent,
+    NewsComponent,
+    MagazineComponent,
+    AcademicCalendarComponent,
+    ScholarshipComponent
   ],
   imports: [
     CommonModule,
     RouterModule.forChild(MoreRoutes),
     HomeModule,
-    SharedModule
+    SharedModule,
+    NgxPaginationModule
   ]
 })
 export class MoreModule { }

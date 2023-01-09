@@ -10,6 +10,9 @@ import { BasicModule } from './basic/basic.module';
 import { DepartmentModule } from './department/department.module';
 import { CourseModule } from './course/course.module';
 import { MoreModule } from './more/more.module';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { NgxPaginationModule } from 'ngx-pagination';
+import { ToastrModule } from 'ngx-toastr';
 
 
 @NgModule({
@@ -25,10 +28,12 @@ import { MoreModule } from './more/more.module';
     CarouselModule,
     BrowserAnimationsModule,
     BasicModule,
+    HttpClientModule,
     DepartmentModule,
     CourseModule,
-    MoreModule
-     
+    MoreModule,
+    NgxPaginationModule,
+    ToastrModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]
