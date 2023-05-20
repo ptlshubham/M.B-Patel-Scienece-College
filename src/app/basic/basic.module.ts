@@ -11,6 +11,7 @@ import { HomeModule } from '../home/home.module';
 import { InfrastructureComponent } from './infrastructure/infrastructure.component';
 import { ActivityComponent } from './activity/activity.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 
@@ -29,6 +30,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     RouterModule.forChild(BasicRoutes),
     HomeModule,
     FormsModule,
+    NgbModule,
     ReactiveFormsModule
 
   ]

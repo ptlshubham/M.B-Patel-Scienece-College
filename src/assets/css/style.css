@@ -5065,7 +5065,7 @@ body .modal-backdrop {
   margin-top: -60px;
 }
 .rs-about.style1 .notice-bord.style1 .title {
-  background: #614747;
+  background: #573229;
   font-size: 20px;
   text-transform: uppercase;
   padding: 18px 25px;
@@ -5767,7 +5767,7 @@ body .modal-backdrop {
   overflow: hidden;
   padding: 30px;
   display: block;
-  color: #505050;
+  color: #573229;
   border-radius: 5px;
   display: flex;
   align-items: center;
@@ -5794,9 +5794,9 @@ body .modal-backdrop {
   transition: all 0.3s ease;
 }
 .rs-categories.style1 .categories-item:hover {
-  background: #614747;
+  background: #573229;
   color: #ffffff;
-  border-color: #614747;
+  border-color: #573229;
 }
 .rs-categories.style1 .categories-item:hover .icon-part {
   background: #ffffff;
